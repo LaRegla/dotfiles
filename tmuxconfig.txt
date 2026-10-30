@@ -1,0 +1,9 @@
+setw -g mode-keys vi   # optional, only if you want vi keys in copy mode
+bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "clip.exe"
+set-window-option -g window-status-current-style bg=red
+set-option -g pane-active-border-style fg=blue
+set-option -g prefix C-s
+bind-key C-s send-prefix
+unbind-key C-b
+
+
