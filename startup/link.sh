@@ -2,8 +2,7 @@
 set -euo pipefail
 
 DOT="$HOME/dotfiles"
-WIN_WEZTERM="/mnt/c/Users/$USER/.wezterm.lua"
-
+WIN_WEZTERM="/mnt/c/Users/$USER/.wezterm.lua" # replace $USER with your windows username if not same as linux username
 # --- sanity checks ---
 for f in tmuxconf nvimconf weztermconf; do
   if [[ ! -e "$DOT/$f" ]]; then
